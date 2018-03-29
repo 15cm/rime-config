@@ -12,16 +12,11 @@ patch:
     page_size: 8
 
   schema_list:
-  # - schema: xhup
-  - schema: xhup_express
   - schema: double_pinyin_flypy  # 小鶴雙拼
+  - schema: xhup_express # 小鹤音形·连打
+  # - schema: xhup # 小鹤音形
   - schema: emoji
   - schema: kaomoji
-  # - schema: luna_pinyin_simp     # 朙月拼音·简化字，可以按 ctrl+` 选择临时启用正體中文
-  # - schema: luna_pinyin_fluency  # 语句流
-  #- schema: wubi_pinyin          # 五笔拼音混合輸入
-  # - schema: wubi86               # 五笔 86
-  # - schema: luna_pinyin_tw       # 朙月拼音·臺灣正體，可以按 ctrl+` 選擇臨時啓用简体中文
 
   ascii_composer:
     good_old_caps_lock: true
