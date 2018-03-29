@@ -9,13 +9,14 @@ patch:
 
   # 候选词 5 个
   menu:
-    page_size: 7
+    page_size: 8
 
   schema_list:
   # - schema: xhup
   - schema: xhup_express
   - schema: double_pinyin_flypy  # 小鶴雙拼
   - schema: emoji
+  - schema: kaomoji
   # - schema: luna_pinyin_simp     # 朙月拼音·简化字，可以按 ctrl+` 选择临时启用正體中文
   # - schema: luna_pinyin_fluency  # 语句流
   #- schema: wubi_pinyin          # 五笔拼音混合輸入

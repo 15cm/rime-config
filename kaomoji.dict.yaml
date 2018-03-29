@@ -1,0 +1,146 @@
+# Rime dictionary - kaomoji
+# encoding: utf-8
+# ref: http://www.facemark.jp/
+---
+name: kaomoji
+version: "0.5"
+sort: origin
+...
+
+(￣ε(#￣) 	va	10
+<( ￣＾￣)> 	va	10
+o(￣ヘ￣o＃) 	va	10
+<(￣︶￣)> 	va	10
+╮(╯_╰)╭ 	va	10
+╮(￣▽￣)╭	va	10
+（ˉ﹃ˉ）	va	10
+m(_ _)m	vd	10
+≧▽≦	vd	10
+⊙.⊙	vd	10
+〒▽〒	vd	10
+┬＿┬	vd	10
+＞﹏＜	vd	10
+ˊ_>ˋ	vd	10
+Θ_Θ	vd	10
+¬_¬	vd	10
+눈_눈	vd	10
+ζ*'ヮ')ζ	vs	10
+( ・ˍ・)	vs	10
+(´･ω･`)	vs	10
+(●′ω`●) 	vs	10
+o(‵ε′)ψ	vs	10
+(#‵′)凸	vs	10
+(੭ु´･ω･`)੭ु⁾⁾	vs	10
+(つД`)	vs	10
+ヽ(；▽；)ﾉ	vs	10
+(つ。⊂)	vs	10
+(*/ω＼*)	vs	10
+(ﾟДﾟ≡ﾟдﾟ)!?	vs	10
+(＃°Д°)	vs	10
+( ͡° ͜ʖ ͡°)✧	vs	10
+ლ(･ิω･ิლ)	vs	10
+(╬ Ò ‸ Ó)	vs	10
+∑(ﾟдﾟ;)	vs	10
+∑(￣ﾛ￣||)	vs	10
+Σ(・ω・」)」	vs	10
+(°⌓°;	vs	10
+ヽ(ﾟ∀ﾟ*)ﾉ	vs	10
+･ﾟ･(ﾉД`;)･ﾟ	vs	10
+／人◕‿‿◕人＼	vz	10
+(<ゝω·)☆~	vz	10
+( ╯-_-)╯~┴—┴ 	vz	10
+┯━┯ノ('－'ノ)	vz	10
+( ´･･)ﾉ(._.`) vz	10
+_(:з」∠)_	vz	10
+╧═╧╰（`□′╰）	vz	10
+（T_ T(○=(＞_＜o	vz	10
+（╬￣皿￣）＝○＃（￣＃）３￣）	vz	10
+～(￣▽￣～)(～￣▽￣)～	vz	10
+ˊㅅˋ	vz	10
+#
+°	du	10
+♂	nan	10
+♀	nv	10
+↑	shang	10
+↓	xia	10
+♥	xin	10
+★	xing	10
+✩	xing	10
+♪	yin fu	10
+♫	yin fu	10
+→	you	10
+↗	you shang	10
+↘	you xia	10
+←	zuo	10
+↖	zuo shang	10
+↙	zuo xia	10
+√	gou	10
+×	cha	10
+囗	kuang	10
+
+⑨		jiu	10
+∵	because	10
+∴	therefore	10
+~	sim	10
+∈	in	10
+⊂	subset	10
+⊆	subseteq	10
+∑	sum	10
+∏	prod	10
+∫	int	10
+∮	oint	10
+∀	forall	10
+∃	exists	10
+∇	nabla	10
+∆	triangle	10
+∞	infty	10
+≐	doteq	10
+	10
+Α	alpha	10
+Β	beta	10
+Γ	gamma	10
+Δ	delta	10
+Ε	epsilon	10
+Ζ	zeta	10
+Η	eta	10
+Θ	theta	10
+Ι	iota	10
+Κ	kappa	10
+Λ	lambda	10
+Μ	mu	10
+Ν	nu	10
+Ξ	xi	10
+Ο	omicron	10
+Π	pi	10
+Ρ	rho	10
+Σ	sigma	10
+Τ	tau	10
+Υ	upsilon	10
+Φ	phi	10
+Χ	chi	10
+Ψ	psi	10
+Ω	omega	10
+α	alpha	10
+β	beta	10
+γ	gamma	10
+δ	delta	10
+ε	epsilon	10
+ζ	zeta	10
+η	eta	10
+θ	theta	10
+ι	iota	10
+κ	kappa	10
+λ	lambda	10
+μ	mu	10
+ν	nu	10
+ξ	xi	10
+ο	omicron	10
+π	pi	10
+ρ	rho	10
+σ	sigma	10
+τ	tau	10
+υ	upsilon	10
+φ	phi	10
+χ	chi	10
+ψ	psi	10
+ω	omega	10
