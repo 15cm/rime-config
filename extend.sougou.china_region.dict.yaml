@@ -1,5 +1,5 @@
 ---
-name: double_pinyin_flypy.china_region
+name: extend.sougou.china_region
 version: "2018.03.28"
 sort: by_weight
 use_preset_vocabulary: true

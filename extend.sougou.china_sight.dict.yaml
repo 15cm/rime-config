@@ -1,5 +1,5 @@
 ---
-name: double_pinyin_flypy.china_sight
+name: extend.sougou.china_sight
 version: "2018.03.28"
 sort: by_weight
 use_preset_vocabulary: true
