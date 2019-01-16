@@ -27,7 +27,7 @@
 
 patch:
   # 載入朙月拼音擴充詞庫
-  "translator/dictionary": double_pinyin_flypy.sougou
+  "translator/dictionary": luna_pinyin.extended
 
   switches:
     # - name: ascii_mode
