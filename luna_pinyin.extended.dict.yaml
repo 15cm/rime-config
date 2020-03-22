@@ -43,17 +43,6 @@ use_preset_vocabulary: true
 import_tables:
   - luna_pinyin
   - luna_pinyin.sogou
-  - extend.sougou.anime
-  - extend.sougou.china_region
-  - extend.sougou.china_sight
-  - extend.sougou.computer
-  - extend.sougou.finance
-  - extend.sougou.food
-  - extend.sougou.japan_artist
-  - extend.sougou.japan_star
-  - extend.sougou.japan_place
-  - extend.sougou.touhou_project
-  - extend.sougou.mahjong
   # - luna_pinyin.hanyu
   # - luna_pinyin.poetry
   # - meow_emoji
