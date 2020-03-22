@@ -14,7 +14,7 @@ patch:
   schema_list:
   - schema: double_pinyin_flypy  # 小鶴雙拼
   # - schema: xhup_express # 小鹤音形·连打
-  # - schema: xhup # 小鹤音形
+  - schema: xhup # 小鹤音形
   - schema: emoji
   - schema: kaomoji
 
