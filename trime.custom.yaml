@@ -1,0 +1,146 @@
+# trime.custom.yaml  
+patch:  
+  style/locale: zh_CN
+  style/hanb_font: HanaMinB.ttf #擴充字型
+  style/vertical_correction: "0"
+  style/vertical_gap: 7
+  style/layout/max_entries: 2
+  style/layout/min_length: 3
+  "preset_keyboards/double_pinyin_flypy/import_preset": my_qwerty0   #预设 36 键布局的 ID 是 qwerty0
+  # Override preset_keys
+  "preset_keys/Left/repeatable": true
+  "preset_keys/Down/repeatable": true
+  "preset_keys/Up/repeatable": true
+  "preset_keys/Right/repeatable": true
+
+  # Custom preset_keys
+  preset_keys/WordLeft:
+    label: "w←"
+    repeatable: true
+    text: "{Control+Left}"
+  preset_keys/WordRight:
+    label: "w→"
+    repeatable: true
+    text: "{Control+Right}"
+
+# 1、新建一个键盘布局 xkey  
+  "preset_keyboards/xkey":  #布局 ID  
+    author: "15cm"   #作者  
+    name: "数字+操作键"  #方便自己辨识的名字  
+    ascii_mode: 1 #默认进入英文状态  
+    height: 44   #每行高度  
+    width: 13   #按键默认宽度（取所有按键中用得较多的宽度值，接下来就可以少写一些 width 了）  
+    keys:   #按键排列  
+      # 第一行  
+      - {click: "select_all"}
+      - {click: "cut"}
+      - {click: "copy"}
+      - {click: "paste"}
+      - {click: 7, width: 16}
+      - {click: 8, width: 16}
+      - {click: 9, width: 16}
+      # 第二行  
+      - {click: Delete}  
+      - {click: Up}  
+      - {click: BackSpace, width: 26}  
+      - {click: 4, width: 16}  
+      - {click: 5, width: 16}  
+      - {click: 6, width: 16}  
+      # 第三行  
+      - {click: Left}  
+      - {click: Tab}  
+      - {click: Right}  
+      - {click: Page_Up}
+      - {click: 1, width: 16}  
+      - {click: 2, width: 16}  
+      - {click: 3, width: 16}  
+      # 第四行  
+      - {click: Home}  
+      - {click: Down}  
+      - {click: End}  
+      - {click: Page_Down}
+      - {width: 16}  
+      - {click: 0, width: 16}  
+      - {width: 16}  
+      # 第五行  
+      - {click: Keyboard_default, long_click: Menu, width: 18}  
+      - {click: space, width: 30}  
+      - {click: '.', width: 18}  
+      - {click: Return, width: 18}  
+      - {click: Hide, width: 16}  
+  "preset_keyboards/my_qwerty0":
+    author: 15cm
+    name: 36 keys
+    ascii_mode: 0
+    width: 10
+    height: 44
+    keys:
+      - {click: '1', long_click: '!'}
+      - {click: '2', long_click: '@'}
+      - {click: '3', long_click: '#'}
+      - {click: '4', long_click: '$'}
+      - {click: '5', long_click: '%'}
+      - {click: '6', long_click: '^'}
+      - {click: '7', long_click: '&'}
+      - {click: '8', long_click: '*'}
+      - {click: '9', long_click: '('}
+      - {click: '0', long_click: ')'}
+      - {click: 'q', long_click: '_'}
+      - {click: 'w', long_click: '-'}
+      - {click: 'e', long_click: '+'}
+      - {click: 'r', long_click: '='}
+      - {click: 't', long_click: '|'}
+      - {click: 'y', long_click: '\'}
+      - {click: 'u', long_click: '['}
+      - {click: 'i', long_click: ']'}
+      - {click: 'o', long_click: '{'}
+      - {click: 'p', long_click: '}'}
+      - {width: 5}
+      - {click: 'a', long_click: select_all }
+      - {click: 's', long_click: Home}
+      - {click: 'd', long_click: End}
+      - {click: 'f', long_click: Page_Up}
+      - {click: 'g', long_click: Page_Down}
+      - {click: 'h', long_click: WordLeft}
+      - {click: 'j', long_click: WordRight}
+      - {click: 'k', long_click: ':'}
+      - {click: 'l', long_click: ';'}
+      - {width: 5}
+      - {click: Shift_L, send_bindings: false, width: 15}
+      - {click: 'z', long_click: '`'}
+      - {click: 'x', long_click: cut}
+      - {click: 'c', long_click: copy}
+      - {click: 'v', long_click: paste}
+      - {click: 'b', long_click: "'"}
+      - {click: 'n', long_click: '"'}
+      - {click: 'm', long_click: "~"}
+      - {click: BackSpace, width: 15}
+      - {click: Keyboard_xkey, long_click: Menu, width: 15}
+      - {click: Keyboard_symbols, long_click: Keyboard_number}
+      - {click: ',', long_click: '<'}
+      - {click: space, width: 30}
+      - {click: '.', long_click: '>'}
+      - {click: '/', long_click: '?'}
+      - {click: Return, long_click: CommitComment, width: 15}
+  
+# 2、要在主键盘中调用它，就得新建一个功能键，来开启这个 ID 为 xkey 的键盘  
+  "preset_keys/Keyboard_xkey":   #按键 ID  
+    label: 123    #按键标签  
+    send: Eisu_toggle  #执行切换键盘命令  
+    select: xkey   #选择 xkey 键盘  
+  "preset_keys/Keyboard_my_qwerty0":   #按键 ID  
+    label: 123    #按键标签  
+    send: Eisu_toggle  #执行切换键盘命令  
+    select: my_qwerty0   #选择 my_qwerty0 键盘  
+  
+# 3、把这个切换键盘的功能键放到主键盘中（以预设 36 键键盘为例）  
+  # "preset_keyboards/qwerty0/keys/@41/long_click": Keyboard_xkey  #通过长按符号键来开启这个键盘
+  
+# 4、最后在 style/keyboards 中声明一下我们要用到 xkey 这个键盘  
+  "style/keyboards":  
+    - .default  
+    - default  
+    - number  
+    - symbols  
+    - xkey  #style/keyboards 不能只写 xkey 一个，其它用到的键盘要照原样抄过来，不然会出错 
+    - my_qwerty0

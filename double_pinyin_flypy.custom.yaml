@@ -30,6 +30,9 @@ patch:
   "translator/dictionary": luna_pinyin.extended
 
   switches:
+    # placeholder to right align switches
+    - options: [ _key_VoidSymbol ]
+      states: [ "                          " ]
     - name: ascii_mode
       reset: 0
       states: ["中文", "西文"]
