@@ -1,5 +1,5 @@
 *.userdb
-build/
 sync/
 user.yaml
 rime/
+*.bin
