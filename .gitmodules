@@ -1,0 +1,3 @@
+[submodule "rime-sogou-dictionaries"]
+	path = rime-sogou-dictionaries
+	url = https://github.com/15cm/rime-sogou-dictionaries
