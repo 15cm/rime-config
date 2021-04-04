@@ -18,19 +18,4 @@ for url in ${config_urls[@]}; do
   wget -O rime/$(basename $url) $url
 done
 
-build_data_urls=(
-  https://github.com/imaojun/flypy-linux/raw/master/fcitx/rime-data/build/flypy.prism.bin
-  https://github.com/imaojun/flypy-linux/raw/master/fcitx/rime-data/build/flypy.reverse.bin
-  https://github.com/imaojun/flypy-linux/raw/master/fcitx/rime-data/build/flypy.table.bin
-  https://github.com/imaojun/flypy-linux/raw/master/fcitx/rime-data/build/flypydz.prism.bin
-  https://github.com/imaojun/flypy-linux/raw/master/fcitx/rime-data/build/flypydz.reverse.bin
-  https://github.com/imaojun/flypy-linux/raw/master/fcitx/rime-data/build/flypydz.table.bin
-)
-
-mkdir -p build-data
-
-for url in ${build_data_urls[@]}; do
-  wget -O rime/build/$(basename $url) $url
-done
-
 cp *.yaml rime/
