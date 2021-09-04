@@ -6,6 +6,7 @@ patch:
   style/vertical_gap: 7
   style/layout/max_entries: 2
   style/layout/min_length: 3
+  style/keyboard_padding_portrait: 5
   "preset_keyboards/double_pinyin_flypy/import_preset": my_qwerty0   #预设 36 键布局的 ID 是 qwerty0
   # Override preset_keys
   "preset_keys/Left/repeatable": true
