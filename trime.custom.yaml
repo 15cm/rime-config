@@ -86,20 +86,20 @@ patch:
       - {click: '8', long_click: '*'}
       - {click: '9', long_click: '('}
       - {click: '0', long_click: ')'}
-      - {click: 'q', long_click: '_'}
-      - {click: 'w', long_click: '-'}
-      - {click: 'e', long_click: '+'}
-      - {click: 'r', long_click: '='}
-      - {click: 't', long_click: '|'}
-      - {click: 'y', long_click: '\'}
-      - {click: 'u', long_click: '['}
-      - {click: 'i', long_click: ']'}
-      - {click: 'o', long_click: '{'}
-      - {click: 'p', long_click: '}'}
+      - {click: 'q', long_click: Home}
+      - {click: 'w', long_click: End}
+      - {click: 'e', long_click: '_'}
+      - {click: 'r', long_click: '-'}
+      - {click: 't', long_click: '+'}
+      - {click: 'y', long_click: '='}
+      - {click: 'u', long_click: '|'}
+      - {click: 'i', long_click: '\'}
+      - {click: 'o', long_click: '['}
+      - {click: 'p', long_click: ']'}
       - {width: 5}
       - {click: 'a', long_click: select_all }
-      - {click: 's', long_click: Home}
-      - {click: 'd', long_click: End}
+      - {click: 's', long_click: Clear}
+      - {click: 'd', long_click: redo}
       - {click: 'f', long_click: Page_Up}
       - {click: 'g', long_click: Page_Down}
       - {click: 'h', long_click: WordLeft}
@@ -108,7 +108,7 @@ patch:
       - {click: 'l', long_click: ';'}
       - {width: 5}
       - {click: Shift_L, send_bindings: false, width: 15}
-      - {click: 'z', long_click: '`'}
+      - {click: 'z', long_click: undo}
       - {click: 'x', long_click: cut}
       - {click: 'c', long_click: copy}
       - {click: 'v', long_click: paste}
